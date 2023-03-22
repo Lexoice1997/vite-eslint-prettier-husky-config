@@ -1,4 +1,5 @@
 import { useState } from 'react';
+
 import './App.css';
 import reactLogo from './assets/react.svg';
 
@@ -17,7 +18,7 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button type="submit" onClick={() => setCount((countd) => count + 1)}>
+        <button type="button" onClick={() => setCount((prev) => count + 1)}>
           count is
           {count}
         </button>
@@ -27,9 +28,7 @@ function App() {
           and save to test HMR
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <p className="read-the-docs">Click on the Vite and React logos to learn more</p>
     </div>
   );
 }
